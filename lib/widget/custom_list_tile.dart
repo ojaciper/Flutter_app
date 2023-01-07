@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/models/user_model.dart';
 
 class CustomListTile extends StatelessWidget {
-  UserModel user;
-  CustomListTile({
+  final UserModel user;
+  const CustomListTile({
     Key? key,
     required this.user,
   }) : super(key: key);
@@ -19,7 +19,7 @@ class CustomListTile extends StatelessWidget {
             color: Colors.grey.shade300,
             blurRadius: 0,
             spreadRadius: 1,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
           )
         ],
       ),

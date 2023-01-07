@@ -1,10 +1,12 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_app/models/user_model.dart';
 import 'package:flutter_app/utils/constant.dart';
 import 'package:http/http.dart' as http;
 
 class ApiServices {
+  // api to get user data
   Future<List<UserModel>> getUser() async {
     List<UserModel> userModel = [];
     try {
@@ -21,7 +23,7 @@ class ApiServices {
         }
       }
     } catch (e) {
-      print(e);
+      debugPrint(e.toString());
     }
     return userModel;
   }

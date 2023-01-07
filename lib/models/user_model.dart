@@ -27,18 +27,18 @@ class UserModel {
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
-        id: json["id"] == null ? null : json["id"],
-        email: json["email"] == null ? null : json["email"],
-        firstName: json["first_name"] == null ? null : json["first_name"],
-        lastName: json["last_name"] == null ? null : json["last_name"],
-        avatar: json["avatar"] == null ? null : json["avatar"],
+        id: json["id"] ?? '',
+        email: json["email"] ?? '',
+        firstName: json["first_name"] ?? '',
+        lastName: json["last_name"] ?? '',
+        avatar: json["avatar"] ?? '',
       );
 
   Map<String, dynamic> toJson() => {
-        "id": id == null ? null : id,
-        "email": email == null ? null : email,
-        "first_name": firstName == null ? null : firstName,
-        "last_name": lastName == null ? null : lastName,
-        "avatar": avatar == null ? null : avatar,
+        "id": id,
+        "email": email,
+        "first_name": firstName,
+        "last_name": lastName,
+        "avatar": avatar,
       };
 }
