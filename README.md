@@ -5,4 +5,4 @@ A new Flutter project.
 ## Getting Started
 
 
-- [x] Apk link        https://drive.google.com/file/d/1MdyXh_K_wGbs3xiTxY_D-bbmyd93tZlT/view?usp=sharing
+- [x] Apk link       https://drive.google.com/drive/folders/1eouy46AzZsQHqP-LosPjacu5MgP0gtZE?usp=sharing
